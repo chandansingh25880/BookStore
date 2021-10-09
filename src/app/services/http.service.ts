@@ -10,6 +10,7 @@ export class HttpService {
   
   
   baseUrl = environment.baseUrl;
+  // getService: any;
   
   constructor(private httpClient: HttpClient) { }
 
@@ -20,4 +21,13 @@ export class HttpService {
   */
     return this.httpClient.post(this.baseUrl+url, payload, tokenRequired && httpOptions);
   }
+
+  getService( url: string = '', tokenRequired: boolean = false, httpOptions:any=null) {
+    /* handles post operations
+      params : id  : id of question or comment to add/post,
+      apiendpoint : endpoint i.e 'comments/' , 'answers/', 'editquestions/'
+  */
+    return this.httpClient.get(this.baseUrl+url , tokenRequired && httpOptions);
+  }
+  
 }

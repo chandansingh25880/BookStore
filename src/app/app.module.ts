@@ -8,6 +8,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { materialModule } from './material/material.module';
 import { LoginDisplayComponent } from './Components/login-display/login-display.component';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { HeaderComponent } from './Components/header/header.component';
+import { ForgetPasswordComponent } from './Components/forget-password/forget-password.component';
+import { FooterComponent } from './Components/footer/footer.component';
+import { GetbooksComponent } from './Components/getbooks/getbooks.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +19,10 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     LoginComponent,
     SignupComponent,
     LoginDisplayComponent,
+    HeaderComponent,
+    ForgetPasswordComponent,
+    FooterComponent,
+    GetbooksComponent,
     
    
   ],

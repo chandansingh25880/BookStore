@@ -13,6 +13,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatRadioModule } from '@angular/material/radio';
 import { HttpClientModule } from '@angular/common/http';
 import { MatCardModule } from '@angular/material/card';
+import {MatToolbarModule} from '@angular/material/toolbar'; 
 
 @NgModule({
     imports: [
@@ -30,7 +31,8 @@ import { MatCardModule } from '@angular/material/card';
         MatPaginatorModule,
         MatRadioModule,
         HttpClientModule,
-        MatCardModule
+        MatCardModule,
+        MatToolbarModule
         
     ],
     exports:[
@@ -48,7 +50,8 @@ import { MatCardModule } from '@angular/material/card';
         MatPaginatorModule,
         MatRadioModule,
         HttpClientModule,
-        MatCardModule
+        MatCardModule,
+        MatToolbarModule
     ]
     
 })

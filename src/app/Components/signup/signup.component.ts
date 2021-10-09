@@ -10,7 +10,7 @@ import { UserService} from 'src/app/services/user.service';
 })
 export class SignupComponent implements OnInit {
   hide = true;
-  // userService: any;
+  
 
   constructor(public service:UserService) { }
 
@@ -35,7 +35,12 @@ export class SignupComponent implements OnInit {
             console.log("signup successfully",data)
       
         });
-      }
+
+        (error:any) => {
+
+          console.log(error);
+        }
+       }
       }
 
   ngOnInit(): void {

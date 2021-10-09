@@ -1,0 +1,31 @@
+<!-- <p>header works!</p> -->
+
+ <header class = "header">
+    <div class = "mainhead">
+       <img class = "Img" style = "height: 24px;" src = "../../assets/education.svg">
+       <h2 class = "heading">Bookstore</h2>
+       <div class = "search">
+            <button mat-icon-button class = "example-icon search-icon" mat-icon-button >
+                <mat-icon style = "margin:0px;">search</mat-icon>
+            </button>
+            <mat-menu #menu1 = "matMenu" class = "search-toggle"  xPosition = "after"style = "width:800px" >
+                <span><input mat-menu-item class = "search-toggle-item" aria-label = "Search" type = "text" placeholder  =  "Search"></span>
+            </mat-menu> 
+            <input class = "searchInput" name="searchText" type = "text" placeholder = "Search"> 
+       </div>
+
+       <div class = "profile">
+           <mat-icon class = "headerButton">person</mat-icon>
+           <mat-menu class = "profile" #menu = "matMenu" >
+                <div class = "profileMenu">
+                    <h5 style = "cursor: pointer" >Profile</h5>
+               </div>    
+            </mat-menu>
+           <h5 style = "margin: 0; color:#FCFCFC;" >Profile</h5>
+       </div>
+       <div class = "bookcart" >
+        <mat-icon class="badgeContent"> local_grocery_store</mat-icon>
+        <h5 style = "margin: 0; color:#FCFCFC;" >Cart</h5>
+    </div>
+  </div>
+</header> 
